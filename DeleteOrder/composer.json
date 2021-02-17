@@ -1,0 +1,23 @@
+{
+  "name": "mysticwebdesigns/module-delete-orders",
+  "description": "Mysticwebdesigns Delete Orders extension",
+  "type": "magento2-module",
+  "version": "1.0.0",
+  "license": "proprietary",
+  "authors": [
+    {
+      "name": "Mysticwebdesigns",
+      "email": "support@mysticwebdesigns.com",
+      "homepage": "https://www.mysticwebdesigns.com",
+      "role": "Technical Support"
+    }
+  ],
+  "autoload": {
+    "files": [
+      "registration.php"
+    ],
+    "psr-4": {
+      "Mysticwebdesigns\\DeleteOrder\\": ""
+    }
+  }
+}

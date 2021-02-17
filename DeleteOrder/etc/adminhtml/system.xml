@@ -1,0 +1,45 @@
+<?xml version="1.0"?><!--
+
+/**
+ * Mysticwebdesigns
+ *
+ * NOTICE OF LICENSE
+ *
+ * This source file is subject to the mysticwebdesigns.com 
+ * that is bundled with this package in the file Mysticwebdesigns-License.txt.
+ * It is also available through the world-wide-web at this URL:
+ * http://mysticwebdesigns.com/Mysticwebdesigns-License.txt
+ *
+ * DISCLAIMER
+ *
+ * Do not edit or add to this file if you wish to upgrade this extension to newer
+ * version in the future.
+ *
+ * @category    Mysticwebdesigns
+ * @package     Mysticwebdesigns_DeleteOrder
+ * @copyright   Copyright (c) Mysticwebdesigns ( https://www.mysticwebdesigns.com/ )
+ * @license     https://www.mysticwebdesigns.com/Mysticwebdesigns-License.txt
+ */
+ 
+ -->
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Config:etc/system_file.xsd">
+    <system>
+		<tab id="mysticwebdesigns" translate="label" sortOrder="1">
+		   <label>Mystic Web Designs</label>
+	   </tab>
+        <section id="delete_order" translate="label" type="text" sortOrder="450" showInDefault="1" showInWebsite="1" showInStore="1" >
+            <class>separator-top</class>
+            <label>Delete Orders</label>
+            <tab>mysticwebdesigns</tab>
+            <resource>Mysticwebdesigns_DeleteOrder::delete_order</resource>
+            <group id="general" translate="label" type="text" sortOrder="1" showInDefault="1" showInWebsite="1" showInStore="1">
+                <label>General</label>
+                <field id="enabled" translate="label comment" type="select" sortOrder="10" showInDefault="1" showInWebsite="1" showInStore="1" >
+                    <label>Enable</label>
+                    <source_model>Magento\Config\Model\Config\Source\Yesno</source_model>
+                    <comment>Select Yes to enable this module</comment>
+                </field>
+            </group>
+        </section>
+    </system>
+</config>
